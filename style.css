@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1a202c;
+    padding: 10px 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-support {
+    display: flex;
+    align-items: center;
+}
+
+.login-support a {
+    color: #ffcc00;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #202e42;
+    color: white;
+}
+
+.intro h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.intro p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.domain-search {
+    margin: 20px 0;
+}
+
+.domain-search input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+}
+
+.domain-search button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+}
+
+.domain-pricing {
+    margin-top: 20px;
+}
+
+.domain-pricing span {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+.hosting-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plan {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 30%;
+    max-width: 30%;
+}
+
+.plan h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.plan .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.plan button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hosting-plans {
+        flex-direction: column;
+    }
+
+    .plan {
+        max-width: 100%;
+    }
+}
